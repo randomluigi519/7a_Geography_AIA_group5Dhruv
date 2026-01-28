@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greenland Flora & Fauna</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --ice-blue: #9fdcff;
+            --frost-white: #eaf6ff;
+            --deep-arctic: #050b12;
+            --glacier-blue: #0f2a3a;
+            --card-glass: rgba(255, 255, 255, 0.07);
+            --border-ice: rgba(160, 220, 255, 0.25);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Cascadia Mono SemiLight", "Cascadia Mono", Consolas, monospace;
+            background:
+                radial-gradient(circle at top, #1a4f6e 0%, transparent 40%),
+                linear-gradient(to bottom, #02060a, #071521, #0b1f2e);
+            color: var(--frost-white);
+            line-height: 1.75;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px 70px;
+            background: linear-gradient(
+                to bottom,
+                rgba(159, 220, 255, 0.12),
+                rgba(0, 0, 0, 0)
+            );
+            border-bottom: 1px solid var(--border-ice);
+        }
+
+        header h1 {
+            font-size: 3.2rem;
+            margin-bottom: 12px;
+            letter-spacing: 1.5px;
+            color: var(--ice-blue);
+            text-shadow: 0 0 18px rgba(159, 220, 255, 0.25);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 22px;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+            margin-bottom: 35px;
+            color: var(--ice-blue);
+            border-left: 6px solid var(--ice-blue);
+            padding-left: 16px;
+            text-shadow: 0 0 12px rgba(159, 220, 255, 0.2);
+        }
+
+        .card {
+            background: linear-gradient(
+                135deg,
+                rgba(255, 255, 255, 0.10),
+                rgba(255, 255, 255, 0.03)
+            );
+            border: 1px solid var(--border-ice);
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(8px);
+            box-shadow:
+                0 12px 28px rgba(0, 0, 0, 0.45),
+                inset 0 0 20px rgba(159, 220, 255, 0.05);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            color: #bfe9ff;
+            font-size: 1.35rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0.3)
+            );
+            border-top: 1px solid var(--border-ice);
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+
+        /* Floating AI Agent Button */
+        .ai-agent {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 999;
+        }
+
+        .ai-agent a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 22px;
+            border-radius: 40px;
+            background: linear-gradient(135deg, #6ecbff, #1e88b5);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            box-shadow: 0 0 25px rgba(110, 203, 255, 0.6);
+            border: 1px solid rgba(255,255,255,0.35);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .ai-agent a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 35px rgba(110, 203, 255, 0.9);
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 2.4rem;
+            }
+
+            h2 {
+                font-size: 1.9rem;
+            }
+
+            .card {
+                padding: 22px;
+            }
+
+            .ai-agent a span {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Greenland Flora & Fauna</h1>
+    <p>Life thriving at the edge of the Arctic world </p>
+</header>
+
+<section>
+    <h2>Fauna </h2>
+
+    <div class="card">
+        <h3>Greenland Wolf (Canis lupus orion)</h3>
+        <p>The Greenland wolf is a rare species once believed extinct by 2002. Today only 40–100 remain, feeding mainly on musk oxen and caribou.</p>
+    </div>
+
+    <div class="card">
+        <h3>Northern Collared Lemming</h3>
+        <p>Greenland’s only rodent, vital to the tundra food web. Its population cycles support Arctic foxes and snowy owls.</p>
+    </div>
+
+    <div class="card">
+        <h3>Polar Bear</h3>
+        <p>Apex predator of the Arctic. Adults hunt seals while foxes follow them to scavenge leftovers.</p>
+    </div>
+
+    <div class="card">
+        <h3>Musk Ox</h3>
+        <p>Known as Umimmak, meaning “the long-bearded,” musk oxen shed their thick winter coats in spring.</p>
+    </div>
+
+    <div class="card">
+        <h3>Greenland Shark</h3>
+        <p>Also called Eqalussuaq, this slow-moving shark inhabits icy northern waters and is known for extreme longevity.</p>
+    </div>
+
+    <div class="card">
+        <h3>Peregrine Falcon</h3>
+        <p>The fastest animal on Earth, reaching speeds of up to 320 km/h during dives.</p>
+    </div>
+
+    <div class="card">
+        <h3>Arctic Bumblebee</h3>
+        <p>A thick-haired bee forming year-round colonies in moss mounds across Greenland.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Flora </h2>
+
+    <div class="card">
+        <h3>Lichens</h3>
+        <p>A symbiotic partnership between fungi and algae that allows survival in extreme Arctic conditions.</p>
+    </div>
+
+    <div class="card">
+        <h3>Dwarf Fireweed</h3>
+        <p>Greenland’s national flower, known as niviarsiaq, eaten by Inuit communities.</p>
+    </div>
+
+    <div class="card">
+        <h3>Northern Green Orchid</h3>
+        <p>A small orchid growing in Arctic bogs and wetlands.</p>
+    </div>
+
+    <div class="card">
+        <h3>Arctous rubra</h3>
+        <p>A low-growing shrub native to cold northern regions.</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Dhruv Karthik. All rights reserved.
+</footer>
+
+<!-- AI Agent Floating Button -->
+<div class="ai-agent">
+    <a href="https://landbot.online/v3/H-3311514-WKTRR6ZPY2NLSZMW/index.html" target="_blank">
+         <span>Ask the Akisooq(knowledgable) AI</span>
+    </a>
+</div>
+
+</body>
+</html>
